@@ -1,31 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
 }
+
 /* navigation bar styles start */
-.header{
+.header {
     margin: 3rem auto;
     width: 90%;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-nav ul li{
+
+nav ul li {
     margin: 45px;
     list-style: none;
 }
-nav  ul li a{
+
+nav ul li a {
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
@@ -33,7 +38,8 @@ nav  ul li a{
     font-weight: 400;
     line-height: 23px;
 }
-.brand{
+
+.brand {
     font-size: 36px;
     font-weight: 800;
     color: #131318;
@@ -41,22 +47,25 @@ nav  ul li a{
     justify-content: center;
     align-items: center;
 }
-.brand-img{
+
+.brand-img {
     margin-right: 24px;
 }
-.brand-logo-color{
+
+.brand-logo-color {
     color: #FF5400;
     font-weight: 800;
 }
+
 /* navigation bar styles end */
 /* banner section styles start */
 
-.banner-container{
-    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url('../images/1.png');
+.banner-container {
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url('../images/1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 1200px;
+    max-width: 1440px;
     height: 500px;
     margin: 0 auto;
     border-radius: 16px;
@@ -65,31 +74,36 @@ nav  ul li a{
     justify-content: center;
     align-items: center;
 }
-.banner-content{
+
+.banner-content {
     max-width: 800px;
     height: 290px;
     margin: 0 auto;
 }
-.banner-text{
+
+.banner-text {
     max-width: 676px;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     color: rgb(255, 255, 255);
     font-size: 64px;
     font-weight: 800;
     line-height: 80px;
     margin: 0 auto;
 }
-.banner-description{
+
+.banner-description {
     color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 26px;
     text-align: center;
 }
-.banner-input-itemes{
+
+.banner-input-itemes {
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.3);   
+    background: rgba(255, 255, 255, 0.3);
     margin-top: 3rem;
     height: 85px;
     padding: 1rem;
@@ -97,14 +111,16 @@ nav  ul li a{
     gap: 24px;
     justify-content: space-around;
 }
-.text{
+
+.text {
     padding: 16px 30px;
     border: 0;
     outline: 0;
     border-radius: 8px;
     background: rgb(255, 255, 255);
 }
-.primary-btn{
+
+.primary-btn {
     padding: 16px 30px;
     border: 0;
     outline: 0;
@@ -113,74 +129,183 @@ nav  ul li a{
     cursor: pointer;
     color: #fff;
 }
-.primary-btn i{
+
+.primary-btn i {
     margin-right: 10px;
     color: #fff;
 }
-/* banner section styles start */
+
+/* banner section styles end */
+
+/* shared styles start */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section {
+    margin-top: 120px;
+}
+
+.color-description {
+    color: #131318;
+    padding: 30px 0;
+}
+
+/* shared styles end */
+/* tour spot container styles start */
+
+.tour-spot-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-spot-text {
+    max-width: 780px;
+    height: 490px;
+    padding: 30px;
+}
+
+.spot-title {
+    color: rgb(19, 19, 24);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-bottom: 35px;
+}
+.tour-spot-content img{
+    width: 540px;
+}
+
+.spot-point li{
+    margin-bottom: 20px;
+}
+/* tour spot container styles end */
+
+/* destination container styles start */
+
+.destination-container{
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    margin-top: 130px;
+}
+.destination-text{
+    max-width: 650px;
+    height: 130px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.destination-text h3 , p{
+    text-align: center;
+}
+.destination-text h3{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 26px;
+    color: #131318;
+}
+.destination-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    position: relative;
+    display: inline-block;
+}
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 35px;
+
+}
+/* destination container styles ends */
 
 /* small device responsive design*/
 @media screen and (max-width: 576px) {
+
     nav,
     nav ul,
-    .banner-input-itemes
-
+    .banner-input-itemes,
+    .tour-spot-container
+    
     {
         flex-direction: column;
     }
-    .banner-title{
+
+    .banner-input-itemes {
+        width: 240px;
+        height: auto;
+        gap: 13px;
+        margin: 0 auto;
+        margin-top: 22px;
+    }
+
+    .banner-title {
         font-size: 32px;
-        text-align: center;
-    }
-    .banner-text{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .banner-description{
-        font-size: 14px;
-        text-align: center;
-        margin-bottom: 32px;
-    }
-    .banner-input-itemes{
-        margin: 0 auto;
-        width: 287px;
-        gap: 16px;
-    }
-    .text{
-        width: 255px;
-    }
-    .banner-content{
-        width: 100%;
         margin: 0;
+        text-align: center;
+        line-height: 40px;
     }
-    .banner-container{
-        display:inline-block;
+
+    .banner-description {
+        font-size: 13px;
+    }
+
+    .banner-container {
+        height: 490px;
+        width: 100%;
+    }
+
+    .banner-content {
+        height: auto;
+    }
+
+    .banner-text {
+        display: inline-block;
+        margin: 10px 20px;
+    }
+    .tour-spot-text{
+        height: auto;
+        width: 440px;
+    }
+    .tour-spot-content img{
+        max-width: 376px;
+        justify-items: center;
+    }
+    .tour-spot-container{
+        margin: 34px;
+        justify-items: center;
+    }
+
+    .image img{
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        margin: 20px;
+    }
+    .destination-container{
+        margin: 20px;
+    }
+    .destination-text{
+        height: auto;
+    }
+    .destination-content{
+        margin: 20px;
+        gap: 0;
     }
 }
-
-
-
-
-/* nav,
-    nav ul,
-    .banner-input-itemes
-    {
-        flex-direction: column;
-    }
-    .banner-input-itemes{
-        margin: 0;
-        gap: 8px;
-        width: 255px;
-    }
-    .banner-title{
-        font-size: 2rem;
-    }
-    .banner-description{
-        font-size: 14px;
-        margin-top: 8px;
-        margin-bottom: 31px;
-    }
-    .banner-text{
-        width: 90%;
-        margin: 0 auto;
-    } */

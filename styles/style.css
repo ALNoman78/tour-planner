@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+/* navigation bar styles start */
+.header{
+    margin: 3rem auto;
+    width: 90%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li{
+    margin: 45px;
+    list-style: none;
+}
+nav  ul li a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(66, 66, 71);
+    font-weight: 400;
+    line-height: 23px;
+}
+.brand{
+    font-size: 36px;
+    font-weight: 800;
+    color: #131318;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-img{
+    margin-right: 24px;
+}
+.brand-logo-color{
+    color: #FF5400;
+    font-weight: 800;
+}
+/* navigation bar styles end */
+/* banner section styles start */
+
+.banner-container{
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url('../images/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 16px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+    max-width: 800px;
+    height: 290px;
+    margin: 0 auto;
+}
+.banner-text{
+    max-width: 676px;
+    height: 156px;
+    margin: 0 auto;
+}
+.banner-title{
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 80px;
+    margin: 0 auto;
+}
+.banner-description{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+.banner-input-itemes{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);   
+    margin-top: 3rem;
+    height: 85px;
+    padding: 1rem;
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+}
+.text{
+    padding: 16px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+.primary-btn{
+    padding: 16px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+/* banner section styles start */
+
+/* small device responsive design*/
+@media screen and (max-width: 576px) {
+    nav,
+    nav ul,
+    .banner-input-itemes
+    {
+        flex-direction: column;
+    }
+    .banner-container{
+        width: 100%;
+        margin: 20px;
+        background-position: center;
+        background-size: cover;
+    }
+    .banner-input-itemes{
+        margin: 0;
+        gap: 8px;
+        width: 255px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-description{
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 31px;
+    }
+    .banner-text{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+/* @media screen and (max-width: 576px) { */
+    /* .header {
+        margin: 1rem auto;
+        width: 95%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .brand {
+        font-size: 28px;
+    }
+    .banner-container {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+    .banner-content {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .banner-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .banner-description {
+        font-size: 14px;
+    }
+    .banner-input-itemes {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0.5rem;
+        gap: 10px;
+    }
+    .text, .primary-btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
+} */

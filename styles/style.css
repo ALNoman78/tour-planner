@@ -144,7 +144,7 @@ main {
     margin: 0 auto;
 }
 
-main > section {
+main>section {
     margin-top: 120px;
 }
 
@@ -174,66 +174,145 @@ main > section {
     line-height: 50px;
     margin-bottom: 35px;
 }
-.tour-spot-content img{
+
+.tour-spot-content img {
     width: 540px;
 }
 
-.spot-point li{
+.spot-point li {
     margin-bottom: 20px;
 }
+
 /* tour spot container styles end */
 
 /* destination container styles start */
 
-.destination-container{
+.destination-container {
     /* max-width: 1440px; */
     margin: 0 auto;
     margin-top: 130px;
 }
-.destination-text{
+
+.destination-text {
     max-width: 650px;
     height: 130px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
-.destination-text h3 , p{
+
+.destination-text h3,
+p {
     text-align: center;
 }
-.destination-text h3{
+
+.destination-text h3 {
     font-size: 40px;
     font-weight: bolder;
     margin-bottom: 26px;
     color: #131318;
 }
-.destination-content{
+
+.destination-content {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.image{
+
+.image {
     position: relative;
     display: inline-block;
 }
-.image img{
+
+.image img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 15px;
 }
-.text-overlay{
+
+.text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     font-size: 28px;
     font-weight: 800;
     line-height: 35px;
 
 }
+
 /* destination container styles ends */
+
+/* services-container styles start */
+
+
+.services-text {
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.services-text>h3 {
+    color: rgb(19, 19, 24);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card>h3 {
+    margin-top: 38px;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    padding: 35px;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.card {
+    padding: 32px;
+    max-width: 573px;
+    height: 284px;
+}
+
+.items {
+    max-width: 486px;
+    height: 124px;
+}
+
+#blue {
+    box-sizing: border-box;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background: rgba(251, 181, 99, 0.05);
+}
+
+#green {
+    box-sizing: border-box;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    border-radius: 16px;
+    background: rgba(41, 206, 246, 0.05);
+}
+
+#red {
+    box-sizing: border-box;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    border-radius: 16px;
+    background: rgba(233, 68, 68, 0.05);
+}
+
+/* services-container styles end */
 
 /* small device responsive design*/
 @media screen and (max-width: 576px) {
@@ -241,7 +320,8 @@ main > section {
     nav,
     nav ul,
     .banner-input-itemes,
-    .tour-spot-container
+    .tour-spot-container ,
+    .services-content
     
     {
         flex-direction: column;
@@ -279,33 +359,45 @@ main > section {
         display: inline-block;
         margin: 10px 20px;
     }
-    .tour-spot-text{
+
+    .tour-spot-text {
         height: auto;
-        width: 440px;
+        width: 350px;
     }
-    .tour-spot-content img{
+
+    .tour-spot-content img {
         max-width: 376px;
         justify-items: center;
     }
-    .tour-spot-container{
+
+    .tour-spot-container {
         margin: 34px;
         justify-items: center;
     }
 
-    .image img{
+    .image img {
         width: 400px;
         height: 200px;
         object-fit: cover;
         margin: 20px;
     }
-    .destination-container{
+
+    .destination-container {
         margin: 20px;
     }
-    .destination-text{
+
+    .destination-text {
         height: auto;
     }
-    .destination-content{
+
+    .destination-content {
         margin: 20px;
         gap: 0;
+        padding: 14px;
+    }
+
+    .card{
+        height: auto;
+        width: 100%;
     }
 }

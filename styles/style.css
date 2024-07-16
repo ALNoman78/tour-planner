@@ -110,8 +110,13 @@ nav  ul li a{
     border: 0;
     outline: 0;
     border-radius: 8px;
-    background: rgb(255, 255, 255);
+    background: #FF5400;
     cursor: pointer;
+    color: #fff;
+}
+.primary-btn i{
+    margin-right: 10px;
+    color: #fff;
 }
 /* banner section styles start */
 

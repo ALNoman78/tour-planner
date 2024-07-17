@@ -39,6 +39,10 @@ nav ul li a {
     line-height: 23px;
 }
 
+.menu-bar{
+    display: none;
+}
+
 .brand {
     font-size: 36px;
     font-weight: 800;
@@ -314,90 +318,7 @@ p {
 
 /* services-container styles end */
 
-/* small device responsive design*/
-@media screen and (max-width: 576px) {
+/* offers section styles start */
 
-    nav,
-    nav ul,
-    .banner-input-itemes,
-    .tour-spot-container ,
-    .services-content
-    
-    {
-        flex-direction: column;
-    }
+/* offers section styles end */
 
-    .banner-input-itemes {
-        width: 240px;
-        height: auto;
-        gap: 13px;
-        margin: 0 auto;
-        margin-top: 22px;
-    }
-
-    .banner-title {
-        font-size: 32px;
-        margin: 0;
-        text-align: center;
-        line-height: 40px;
-    }
-
-    .banner-description {
-        font-size: 13px;
-    }
-
-    .banner-container {
-        height: 490px;
-        width: 100%;
-    }
-
-    .banner-content {
-        height: auto;
-    }
-
-    .banner-text {
-        display: inline-block;
-        margin: 10px 20px;
-    }
-
-    .tour-spot-text {
-        height: auto;
-        width: 350px;
-    }
-
-    .tour-spot-content img {
-        max-width: 376px;
-        justify-items: center;
-    }
-
-    .tour-spot-container {
-        margin: 34px;
-        justify-items: center;
-    }
-
-    .image img {
-        width: 400px;
-        height: 200px;
-        object-fit: cover;
-        margin: 20px;
-    }
-
-    .destination-container {
-        margin: 20px;
-    }
-
-    .destination-text {
-        height: auto;
-    }
-
-    .destination-content {
-        margin: 20px;
-        gap: 0;
-        padding: 14px;
-    }
-
-    .card{
-        height: auto;
-        width: 100%;
-    }
-}

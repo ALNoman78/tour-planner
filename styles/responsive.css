@@ -1,0 +1,113 @@
+@media screen and (max-width: 576px) {
+
+    nav,
+    nav ul,
+    .banner-input-itemes,
+    .tour-spot-container ,
+    .services-content
+    
+    {
+        flex-direction: column;
+    }
+
+    .banner-input-itemes {
+        width: 240px;
+        height: auto;
+        gap: 13px;
+        margin: 0 auto;
+        margin-top: 22px;
+    }
+
+    .navbar{
+        flex-direction: row;
+    }
+
+    .brand-logo-color , .hero {
+        font-size: 28px;
+    }
+    
+    .menu-bar i{
+        font-size: 30px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+        margin: 0;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .banner-description {
+        font-size: 13px;
+    }
+
+    .banner-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .banner-content {
+        height: auto;
+        margin: 1rem;
+    }
+
+    .banner-text {
+        display: inline-block;
+        margin: 10px 20px;
+    }
+
+    .tour-spot-text {
+        height: auto;
+        width: 350px;
+        padding: 10px;
+    }
+
+    .tour-spot-content img {
+        max-width: 325px;
+        justify-items: center;
+    }
+
+    .color-description{
+        padding: 10px;
+    }
+    .destination-text h3, p {
+        text-align: left;
+    }
+
+    .tour-spot-container {
+        margin: 34px;
+        justify-items: center;
+    }
+
+    .image img {
+        width: 335px;
+        height: 200px;
+        object-fit: cover;
+        margin: 20px;
+    }
+
+    .destination-container {
+        margin: 20px;
+    }
+
+    .destination-text {
+        height: auto;
+    }
+
+    .destination-content {
+        margin: 20px;
+        gap: 0;
+        padding: 14px;
+    }
+
+    .card{
+        height: auto;
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+}
